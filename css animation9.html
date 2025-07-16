@@ -1,0 +1,100 @@
+
+<html>
+                    <head>
+                                        <title>button</title>
+                    </head>
+                    <body>
+                                 <div class="center">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        WsCube Tech
+                                 </div>       
+                    </body>
+                    <style>
+                                        body{
+                                                            background-color: #03042c;
+                                                            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                                        }
+                                        .center{
+                                                            position: absolute;
+                                                            top: 50%;
+                                                            left: 50%;
+                                                            color: white;
+                                                            font-size: 50px;
+                                                            padding: 30px 60px;
+                                                            box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.5);
+                                                            transform: translate(-50%,-50%);
+                                                            overflow: hidden;
+                                                            transform: 2s;
+                                        }
+                    .center:before{
+                                       
+                                        position: absolute;
+                                        top: 2px;
+                                        left: 2px;
+                                        width: 50%;
+                                        background: rgba(255, 255, 255,0.05);
+                    }
+                    .center span:nth-child(1){
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 0px;
+                                        width: 100%;
+                                        height: 2px;
+                                        background: linear-gradient(to right,#0c002b,#1779ff);
+                                        animation: ani1 2s linear infinite;
+                    }
+                    @keyframes ani1{
+                                        0%{transform: translateX(-100%);}
+                                        100%{transform: translateX(100%);}
+                    }
+                    .center span:nth-child(2){
+                                        position: absolute;
+                                        top: 0px;
+                                        right: 0px;
+                                        width: 2px;
+                                        height: 100%;
+                                        background: linear-gradient(to bottom,#0c002b,#1779ff);
+                                        animation:ani2 2s linear infinite ;
+                                        animation-delay: 1s;
+                    }
+                    @keyframes ani2{
+                                        0%{transform: translateY(-100%);}
+                                        100%{transform: translateY(100%);}
+                    }
+                    .center span:nth-child(3){
+                                        position: absolute;
+                                        bottom: 0px;
+                                        left: 0px;
+                                        width: 100%;
+                                        height: 2px;
+                                        background: linear-gradient(to left,#0c002b,#1779ff);
+                                        animation:ani3 2s linear infinite ;
+                    }
+                    @keyframes ani3{
+                                        0%{transform: translateX(100%);}
+                                        100%{transform: translateX(-100%);}
+                    }
+                    .center span:nth-child(4){
+                                        position: absolute;
+                                        bottom: 0px;
+                                        left: 0px;
+                                        width: 2px;
+                                        height: 100%;
+                                        background: linear-gradient(to top,#0c002b,#1779ff);
+                                        animation:ani4 2s linear infinite ;
+                                        animation-delay: 1s;
+                    }
+                    @keyframes ani4{
+                                        0%{transform: translateY(100%);}
+                                        100%{transform: translateY(-100%);}
+                    }
+                    .center:hover{
+                                        background: #EEE818;
+                                        color: black;
+                                        box-shadow: 0px 25px 50px  #EEE818 ;
+                    }
+                    </style>
+</html>
